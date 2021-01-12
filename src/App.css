@@ -1,0 +1,764 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Gallifrey 3.0 Stylesheet
+By Nick Patrikeos */
+
+/* GENERAL WEBSITE CSS */
+
+:not(pre *) {
+    font-family: "Helvetica Neue";
+}
+
+body {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.headerSection {
+    margin-top: 50px;
+}
+
+
+/* LINKS */
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(45, 136, 205);
+    padding-top: 10px;
+}
+
+.teacherButton a {
+    color: black;
+}
+
+.studentButton a {
+    color: white;
+}
+
+/* NAVBAR */
+
+#navbar {
+    background-color: lightgray;
+    border-bottom: 2px solid darkgray;
+    margin: -45px -50px 0px -50px;
+    height: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#navbar form {
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+}
+
+#navbar h4, #navbar h3 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#navbar h4 a {
+    color: gray;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+#navbar h4 a:hover {
+    color: navy;
+}
+
+#navbar div[name="logout"] {
+    display: inline-block;
+    float: right;
+    margin-right: 55px;
+}
+
+#navbar div[name="logout"] a {
+    color: gray;
+    text-transform: capitalize;
+}
+
+
+/* TABLES */
+
+table {
+    margin-top: 20px;
+    border-spacing: 0px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#topicListPage table, #manageTopicPage table, #courseListPage table, #manageCoursePage table, #classListPage table, #classCourseProgressReportPage table, #classTopicProgressReportPage table, #classTaskGroupProgressReportPage table {
+    width: 100%;
+}
+
+#topicListPage td, #manageTopicPage td, #courseListPage td {
+    width: 33%;
+}
+
+
+td {
+    border: 1px solid lightgray;
+    padding: 7px;
+    width: fill;
+}
+
+tr[draggable='true'] td {
+  border: 1px dashed lightgray;
+
+}
+
+.altGrey {
+    background-color: rgb(240, 240, 240);
+}
+
+/*#classCourseProgressReportPage .topicName p {
+    -webkit-transform: rotate(-90deg);
+}*/
+
+/* TEACHER DASHBOARD */
+
+
+.teacherDashboardSection {
+    width: 48%;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+.teacherDashboardSection table {
+    width: 100%;
+}
+
+
+/* FORM ELEMENTS */
+
+input[type='button'], input[type='submit']:not(#navbar input[type='submit']) {
+    background-color: gray;
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type='text'], input[type='password'] {
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+#navbar form input[type='submit'] {
+    border: 0px;
+    background-color: lightgray;
+    font-size: 15px;
+    color: gray;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.blueAlert {
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    color: #31708f;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* VIEW COURSE STUDENT PAGE */
+
+#topicProgress {
+    width: 100%;
+}
+
+#topicProgress td {
+    padding: 10px;
+}
+
+#progressDashRow {
+    background-color: rgb(249, 249, 249);
+}
+
+.progressDash {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(245, 245, 245);
+    border-style: inset;
+    border-width: 1px;
+    text-align: center;
+    color: white;
+}
+
+#topicTabs {
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.topicTab {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: rgb(45, 136, 205);
+}
+
+.taskGroupList {
+    display: block;
+}
+
+#taskGroupBox {
+    padding-top: 0px;
+}
+
+.Bronze, .Silver, .Gold, .Platinum, .Kryptonite, .Unspecified {
+    display: block;
+    line-height: 21px;
+    padding: 0 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    color: rgb(45, 136, 205);
+    text-decoration: none;
+}
+
+.Bronze:hover, .Silver:hover, .Gold:hover, .Platinum:hover, .Kryptonite:hover, .Unspecified:hover {
+    text-decoration: underline;
+}
+
+.Bronze::before, .Silver::before, .Gold::before, .Platinum::before, .Kryptonite::before, .Unspecified::before {
+    display: block;
+    height: 21px;
+    width: 21px;
+    content: "";
+    position: absolute;
+    left: 0px;
+}
+
+.Bronze::before {
+    background-color: #ab6402;
+}
+
+.Silver::before {
+    background-color: #bfbfbf;
+}
+
+.Gold::before {
+    background-color: #e3b220;
+}
+
+.Platinum::before {
+    background-color: #bcedf5;
+}
+
+.Kryptonite::before {
+    background-color: #3df543;
+}
+
+.Unspecified::before {
+    background-color: blue;
+}
+
+ .footer {
+    margin-top: 25px;
+}
+
+#taskgroupList {
+    margin-top: 10px;
+    width: 20%;
+}
+
+#taskgroupList, #taskBox {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#taskBox {
+    width: 70%;
+    padding-left: 20px;
+    border-left: 1px solid lightgray;
+}
+
+/* STUDENT DASHBOARD */
+
+.enrolmentBox {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#studentDashboard .progressDash {
+    margin-top: 5px;
+}
+
+.enrolmentBox h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* LISTS */
+
+#addFileToTaskPage ul {
+    list-style-type: circle;
+}
+
+/* DASHES */
+
+.unmarkedDash, .correctDash, .incorrectDash, .fillBarDash {
+    height: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.unmarkedDash {
+    background-color: rgb(45, 136, 205);
+}
+
+.correctDash {
+    background-color: #5eb95e;
+}
+
+.incorrectDash {
+    background-color: #dd514c;
+}
+
+.progressBlock {
+  border: 1px solid lightgray;
+}
+
+.progressSlice {
+  border-bottom: 1px solid lightgray;
+  height: 10px;
+}
+
+.difficultyBronze {
+  background-color: #ab6402;
+  height: 10px;
+}
+
+.difficultySilver {
+  background-color: #bfbfbf;
+  height: 10px;
+}
+
+.difficultyGold {
+  background-color: #e3b220;
+  height: 10px;
+}
+
+.difficultyPlatinum {
+  background-color: #bcedf5;
+  height: 10px;
+}
+
+.difficultyKryptonite {
+  background-color: #3df543;
+  height: 10px;
+}
+
+/* HINTS */
+
+.teacherButton[name="hintHide"] {
+    float: left;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.teacherButton[name="hintHide"] h4 {
+    margin: 0px;
+}
+
+.teacherButton[name="hintShow"] {
+    width: 100%;
+}
+
+/* SUBMISSION DISPLAY ON viewCourseStudent.html */
+
+.submissionDisplay {
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.submissionDisplay[name="unmarked"]{
+    border: 1px solid #faa732;
+}
+
+.submissionDisplay[name="correct"]{
+    border: 1px solid #5eb95e;
+}
+
+.submissionDisplay[name="incorrect"]{
+    border: 1px solid #dd514c;
+}
+
+span[name="correct"]::after, span[name="unmarked"]::after, span[name="incorrect"]::after {
+    float: right;
+    margin-right: -10%;
+    line-height: 21px;
+}
+
+.taskGroupName:hover {
+  text-decoration: underline;
+}
+
+span[name="unmarked"]::after {
+    content: "●";
+    color:#faa732;
+    font-weight: bold;
+    text-align: left;
+}
+
+span[name="correct"]::after {
+    content: "✔";
+    color: #5eb95e;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+span[name="incorrect"]::after {
+    content: "×";
+    font-weight: bold;
+    font-size: 24px;
+    color: #dd514c;
+}
+
+/* POP UP WINDOWS */
+.viewSubmission {
+    /*border: 1px solid lightgray;
+    position: absolute;
+    margin: 0 auto;
+    top: 170px;
+    left: 25%;
+    width: 600px;
+    padding: 10px;
+    background-color: white;*/
+}
+
+input[name="comment"] {
+    height: 100px;
+    display: block;
+}
+
+.viewSubmission .teacherButton {
+    float: left;
+    opacity: 1;
+    margin-top: -30px;
+    margin-left: 275px;
+}
+
+.viewSubmission .greenTeacherButton, .viewSubmission .redTeacherButton, .viewSubmission .studentButton {
+    margin-top: 10px;
+    float: right;
+    margin-right: 5px;
+}
+
+.viewSubmission #taskSolutionAlternate {
+    margin: 0px;
+    display: block;
+    color: white;
+    background-color: rgb(45, 136, 205);
+}
+
+#taskSolutionContent {
+    display: block;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+form h4 {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#closeWindow {
+    color: rgb(45, 136, 205);
+    float: right;
+    margin-top: 10px;
+}
+
+[draggable] {
+    user-select: none;
+}
+
+tr[draggable] {
+    cursor: move;
+}
+
+#error {
+  background-color: rgba(221, 81, 76, 0.5);
+  color: #dd514c;
+  border: 1px solid #dd514c;
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#enrolments {
+    width: 80%;
+    float: left;
+}
+
+.viewAllClasses {
+    float: right;
+    display: block;
+    width: 15%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+.viewAllClasses .studentButton {
+    margin: 0px;
+    align-self: center;
+    width: 80%;
+    margin-right: 10px;
+}
+
+.filebox label {
+    background-color: lightgray;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.attachment label {
+    border: 2px solid gray;
+}
+
+
+.filebox input[type='file'] {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.tecaherButton Link {
+    color: black;
+}
+
+
+/* BUTTONS */
+
+.teacherButton, .greenTeacherButton, .redTeacherButton, .reorderTasksButton {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    display: inline-block;
+    margin-top: -45px;
+    text-align: center;
+    color: black;
+}
+
+.teacherButton:hover, .reorderTasksButton:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.greenTeacherButton {
+    background-color: #5eb95e;
+    color: white;
+}
+
+
+
+#addFileButton, #removeFileButton {
+    float: left;
+    margin-top: 0px;
+}
+#removeFileButton {
+    margin-left: 10px;
+}
+
+.redTeacherButton {
+    background-color: #dd514c;
+    color: white;
+}
+
+.studentButton {
+    border-radius: 5px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+    background-color: rgb(45, 136, 205);
+}
+
+#enrolments .studentButton {
+    margin-top: -62px;
+    margin-bottom: 10px;
+}
+
+#studentDashboard .progressDash {
+    margin-top: 40px;
+}
+
+#progressReportButton {
+    margin-top: -295px;
+}
+
+.teacherButton#reorderTopicsButton, .reorderTasksButton {
+    margin-right: 100px;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+label {
+    line-height: 1.5
+}
+
+.teacherButton#reorderTaskGroupsButton, .teacherButton#importEnrolmentsButton {
+    margin-right: 150px;
+}
+
+/* ATTACHMENTS & ADD TEACHERS */
+
+#editClassPage .teacherButton, #editTaskPage .teacherButton {
+    margin-top: 5px;
+}
+
+.teacher, .attachment {
+    background-color: lightgray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#addAttachmentButton {
+    margin-right: 10px;
+}
+
+pre {
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#description *, #taskSolutionContent * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#taskName {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hljs-comment {
+    color: red;
+}
+
+.hljs-keyword, .hljs-selector-tag {
+    color: purple;
+}
+
+.hljs-meta {
+    color: #B6008D;
+}
+
+.hljs-function, .hljs-built_in {
+    color: blue;
+}
+
+.hljs-string {
+    color: green;
+}
+
+
+.hintShow {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#singleSubmit {
+    display: none;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    width: 170px;
+}
