@@ -15,7 +15,7 @@ function LoginPage({ setAuth, ...props }) {
 
     axios.post('/auth/login', { username, password })
       .then((response) => {
-        response.set('Access-Control-Allow-Origin', '*')
+        // response.set('Access-Control-Allow-Origin', '*')
         const data = response.data
         setAuth(data.token, data.u_id)
 
