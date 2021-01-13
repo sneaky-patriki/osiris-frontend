@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { toast } from 'react-toastify';
 
 // axios.defaults.baseURL = "http://127.0.0.1:8080"
-axios.defaults.baseURL = "http://pure-chamber-53906.herokuapp.com"
+axios.defaults.baseURL = "https://pure-chamber-53906.herokuapp.com"
 axios.defaults.headers.put['Content-Type'] = 'application/json';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.delete['Content-Type'] = 'application/json';
